@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(https://images.freeimages.com/images/large-previews/b2e/rusted-black-texture-1619254.jpg) #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.title_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.title_container p{
+    color: #a00101;
+    font-size: 3rem;
+    font-weight: 600;
+    user-select: none;
+}
+.title_container .round{
+    font-size: 4rem;
+    color: aliceblue;
+}
+
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 1.5em;
+    margin: auto;
+    max-width: 600px;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container button {
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+button:hover{
+    animation-name: vibrar;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+}
+
+.Piedra,
+.Papel,
+.Tijera {
+    font-size: 3rem;
+    background: url(https://www.publicdomainpictures.net/pictures/420000/nahled/rost-textur-hintergrund-grunge.jpg);
+}
+
+.ataque_seleccionado_jugador{
+    font-size: 3rem;
+}
+
+.Jugar {
+    font-size: 1.5rem;
+    color: #dddddd;
+    background: url(https://previews.123rf.com/images/danshanin/danshanin1710/danshanin171000189/87793503-textura-de-una-vieja-hoja-de-hierro-metal-oxidado-tel%C3%B3n-de-fondo-detallado-de-textura-de-%C3%B3xido.jpg);
+}
+.terminar{
+    display: none;
+    font-size: 1.5rem;
+    background: #00000000;
+}
+.terminar_img{
+    width: 200px;
+    height: auto;
+}
+
+.button_container button:active{
+    transform: scale(.9);
+}
+.GP_container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.GP_container img{
+    height: 300px;
+    width: auto;
+}
+.GP_container .ganaste, .perdiste{
+    display: none;
+}
+
+.ataque_seleccionado_cont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 830px) {
+    .title {
+        font-size: 1rem;
+    }
+}
+
+
+
+@keyframes vibrar {
+    0%{
+        transform: rotate(1deg);
+        transform: translate(3px, -1px);
+    }
+    20%{
+        transform: rotate(-1deg);
+        transform: translate(-1px, 1px);
+    }
+    40%{
+        transform: rotate(1deg);
+        transform: translate(1px, -1px);
+    }
+    60%{
+        transform: rotate(-1deg);
+        transform: translate(-1px, 3px);
+    }
+    80%{
+        transform: rotate(1deg);
+        transform: translate(1px, -1px);
+    }
+    100%{
+        transform: rotate(1deg);
+        transform: translate(-3px, 1px);
+    }
+}

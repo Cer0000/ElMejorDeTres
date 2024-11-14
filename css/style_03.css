@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(https://oliverpuente.com/wp-content/uploads/2022/12/1.jpeg) #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.p_container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 4rem;
+    color: red;
+    filter: drop-shadow(0 0 20px #000);
+    user-select: none;
+}
+.img_container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.img_container img{
+    height: 200px;
+    width: auto;
+}
+button{
+    border: none;
+    background: #00000000;
+    cursor: pointer;
+    transition: .2s;
+}
+button:active{
+    transform: scale(.9);
+}
+
+.img_screamer{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}

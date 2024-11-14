@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_01.css">
+    <title>El mejor de tres</title>
+</head>
+
+<body>
+
+    <audio src="../assets/sounds/peep_the_horror.mp3" preload="auto" autoplay loop></audio>
+
+
+    <div class="title_container">
+        <p class="round" id="rounds"></p>
+    </div>
+    <div class="title_container">
+        <p id="player_stats"></p>
+        <p id="enemy_stats"></p>
+    </div>
+
+
+    <div class="button_container" id="ocultar_botones">
+        <button class="Piedra" onclick="piedra(), audio.play()">🪨</button>
+        <button class="Papel" onclick="papel(), audio.play()">📃</button>
+        <button class="Tijera" onclick="tijera(), audio.play()">✂️</button>
+    </div>
+
+
+    <div class="button_container">
+        <button class="Jugar" id="ocultar" onclick="jugar(), audio.play()">Jugar</button>
+    </div>
+    <div class="GP_container">
+        <a class="ganaste" id="ganasteid" href="../pages/index_02.html">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/021/084/975/small/image-of-stairs-concept-of-career-advancement-and-growth-3d-rendering-png.png"
+                alt="">
+        </a>
+        <a class="perdiste" id="perdisteid" href="../pages/index_03.html">
+            <img src="https://pngimg.es/d/door_PNG17576.png" alt="">
+        </a>
+    </div>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

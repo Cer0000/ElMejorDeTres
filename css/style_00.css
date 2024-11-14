@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(https://img.freepik.com/fotos-premium/textura-grunge-pesada-oxido-superficie-pared-hormigon-abandonada-oscura_150101-3872.jpg) #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    padding: 4rem;
+}
+
+.title_container h1 {
+    background: url(https://previews.123rf.com/images/alekseizakirov/alekseizakirov1910/alekseizakirov191000113/131556856-fondo-de-textura-de-metal-oxidado-desgastado-oscuro-textura-de-%C3%B3xido-en-el-concepto-de-fondo.jpg);
+    color: #00000000;
+    filter: drop-shadow(0 0 20px #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    user-select: none;
+    animation-name: vibrar;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+}
+.jugar_container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.jugar_container img{
+    height: 200px;
+    width: auto;
+    filter: drop-shadow(0 0 20px #000);
+    transition: .2s;
+}
+.jugar_container img:hover{
+    transform: scale(1.05);
+}
+
+
+
+@keyframes vibrar {
+    0%{
+        transform: rotate(1deg);
+        transform: translate(3px, -1px);
+    }
+    20%{
+        transform: rotate(-1deg);
+        transform: translate(-1px, 1px);
+    }
+    40%{
+        transform: rotate(1deg);
+        transform: translate(1px, -1px);
+    }
+    60%{
+        transform: rotate(-1deg);
+        transform: translate(-1px, 3px);
+    }
+    80%{
+        transform: rotate(1deg);
+        transform: translate(1px, -1px);
+    }
+    100%{
+        transform: rotate(1deg);
+        transform: translate(-3px, 1px);
+    }
+}
